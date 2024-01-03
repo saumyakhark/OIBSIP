@@ -1,0 +1,173 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <link rel="stylesheet" href="styling.css">
+        <title>Landing Page</title>
+    </head>
+    <body>
+        <label class="switch">
+            <input type="checkbox" id="dark-mode-toggle">
+            <div class="slider round">
+                <span class="on">ON</span>
+                <span class="off">OFF</span>
+            </div>
+        </label>
+        <nav>
+            <div class="heading">BIAS, BHIMTAL</div>
+            <span class="sideMenuButton" onclick="openNavbar()">
+            </span>
+            <div class="navbar">
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><link rel="stylesheet" href="sign.css"><button class="button" id="form-open">
+                    <div id="button" class="open-form-button" onclick="openForm()">Sign In</div></button></link></li>
+                </ul>
+            </div>
+        </nav>
+        <section class="home">
+            <div class="form_container">
+                <i class="uil uil-times form_close"></i>
+                <!-- Login From -->
+                <div class="form login_form">
+                  <form action="#">
+                    <div> <a href="#other" title="Close" class="close">X</a>
+                    <h2>Login</h2>
+                    <div class="input_box">
+                      <input type="email" placeholder="Enter your email" required />
+                      <i class="uil uil-envelope-alt email"></i>
+                    </div>
+                    <div class="input_box">
+                      <input type="password" placeholder="Enter your password" required />
+                      <i class="uil uil-lock password"></i>
+                      <i class="uil uil-eye-slash pw_hide"></i>
+                    </div>
+                    <div class="option_field">
+                      <span class="checkbox">
+                        <input type="checkbox" id="check" />
+                        <label for="check">Remember me</label>
+                      </span>
+                      <a href="#" class="forgot_pw">Forgot password?</a>
+                    </div>
+                    <button class="button">Login Now</button>
+                    <div class="login_signup">Don't have an account? <a href="#" id="signup">Signup</a></div>
+                    </div>
+                </form>
+                </div>
+                <!-- Signup From -->
+                <div class="form signup_form">
+                  <form action="#">
+                    <div> <a href="#other" title="Close" class="close">X</a>
+                    <h2>Signup</h2>
+                    <div class="input_box">
+                      <input type="email" placeholder="Enter your email" required />
+                      <i class="uil uil-envelope-alt email"></i>
+                    </div>
+                    <div class="input_box">
+                      <input type="password" placeholder="Create password" required />
+                      <i class="uil uil-lock password"></i>
+                      <i class="uil uil-eye-slash pw_hide"></i>
+                    </div>
+                    <div class="input_box">
+                      <input type="password" placeholder="Confirm password" required />
+                      <i class="uil uil-lock password"></i>
+                      <i class="uil uil-eye-slash pw_hide"></i>
+                    </div>
+                    <button class="button_ok">Signup Now</button>
+                    <div class="login_signup">Already have an account? <a href="#" id="login">Login</a></div>
+                    </div>
+                </form>
+                </div>
+              </div>
+        </section>
+        <div class="sideNavigationBar" id="sideNavigationBar"><a href="#" class="closeButton" onclick="closeNavbar()"></a>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        </div>
+        
+        <div class="line" id="Home">
+            <div class="side1">
+                <h1>Birla Institute of Applied Sciences</h1>
+                <button>
+                    <a href="https://www.birlainstitute.co.in/">Explore More</a>
+                </button>
+            </div>
+            <div class="side2">
+                <img src="https://www.birlainstitute.co.in/Pictures/img-building.webp" width="500">
+            </div>
+        </div>
+        <section class="about" id="My Projects">
+            <div class="content">
+                <div class="title">
+                    <span>Courses</span>
+                </div>
+                <div class="boxes">
+                    <div class="box">
+                    <div class="topic">
+                        <a href="" target="_blank">B.Tech-CSE</a>
+                    </div>
+                    <p><h3>Computer science and Engineering</h3>The department of Computer Science and Engineering was established in the year 2006. Computer Science & Engineering Department is actively involved in organizing workshops, seminars, conferences, training programs for the benefit of students, faculty, and other members of society.</p>
+                </div>
+                <div class="box">
+                    <div class="topic">
+                        <a href="" target="_blank">
+                            B.Tech-ECE
+                        </a>
+                    </div>
+                    <p><h3>Electronics and Communication</h3> The Department of Electronics & Communication Engineering is proud to be the first department of the college established in 2001. The Department has highly qualified as well as young and dynamic faculty involved in research activities to provide quality education.
+                    </p>
+                </div>
+                <div class="box">
+                    <div class="topic">
+                        <a href="" target="_blank">
+                            MCA
+                        </a>
+                    </div>
+                    <p><h3>MCA</h3>The Master of Computer Applications course was started in the year 1989. The course keeps itself in pace with the IT changes and regularly updates its laboratories with the latest computing facilities and software technologies.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="footer">
+            <div class="heading">
+                <h4>REACH US</h4></h6>
+            </div>
+            <div class="content">
+              <div class="services">
+                <h4>Courses</h4>
+                <p>B.Tech-CSE</p>
+                <p>B.Tech-ECE</p>
+                <p>MCA</p>
+              </div>
+              <div class="links">
+                <h4>Quick links</h4>
+                <p><a href="#">Home</a></p>
+                <p><a href="#">About</a></p>
+                <p><a href="#">Sign Up</a></p>
+              </div>
+              <div class="details">
+                <h4 class="address">Address</h4>
+                <p>
+                  Bhimtal, Nainital, Uttarakhand-263136
+                </p>
+                <h4 class="mobile">For Student's Verification:</h4>
+                <p>9412996069</p>
+                <h4 class="mobile"> For Admission Queries:</h4>
+                <p>9410169995/9415364502</p>
+                <h4 class="mail">Email</h4>
+                <p><a href="#">info@birlainstitute.co.in</a></p>
+              </div>
+            </div>
+            <footer>
+                <span>Created By- <h5>Saumya Kharkwal</h5></span>
+              <hr />
+              © 2024 Infobyteinternship.
+            </footer>
+          </div>
+        <script src="script.js"></script>
+    </body>
+</html>
